@@ -1,4 +1,4 @@
-<img src="/Users/xujing/Library/Application Support/typora-user-images/image-20220823155111810.png" alt="image-20220823155111810" style="zoom:50%;" />
+<!-- <img src="/Users/xujing/Library/Application Support/typora-user-images/image-20220823155111810.png" alt="image-20220823155111810" style="zoom:50%;" />
 
 当使用函数式更新，就能每次都拿到最新的state；还有一种办法是使用useRef
 
@@ -12,4 +12,4 @@
 
 [**我从来不理解JavaScript闭包，直到有人这样向我解释它...**](https://cnodejs.org/topic/5c62403805cc322e7b137f8b)
 
-[react useState 异步回调取不到最新值？见代码](https://segmentfault.com/q/1010000021998386)
+[react useState 异步回调取不到最新值？见代码](https://segmentfault.com/q/1010000021998386) -->
