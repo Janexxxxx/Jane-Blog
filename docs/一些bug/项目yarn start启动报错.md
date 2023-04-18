@@ -1,0 +1,1 @@
+原本yarn start启动项目 但是报错，报错显示node_modules中@wosai有一个npm包报错了，所以用npm install或者yarn 重新下载所有安装包（nom install=yarn），之后再yarn start即可。

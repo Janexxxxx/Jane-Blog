@@ -1,0 +1,15 @@
+![image-20220811172313830](/Users/xujing/Library/Application Support/typora-user-images/image-20220811172313830.png)
+
+出现该问题的原因可能是因为npm和yarn混用了，npm和yarn都有xxx-lock.json，yarn.lock会锁定资源地址，里面锁定了过期的内容，所以删掉yarn.lock之后告警解决。
+
+[ **yarn.lock** deleted ](https://git.wosai-inc.com/TERM/device-cloud-web/-/commit/c248e16e4cd1fb5c69a0fa515678a852b5efa0c5#53585a096fe3a3b96321113856ae62602995a33b) 100644 → 0
+
+************
+
+Q：我的.npmrc已经重新配置过了，我刚刚在yarn的时候也出现了证书过期的问题，但是用npm install就没事，是有些项目安装依赖的时候不能用yarn吗？
+
+A：项目中存在.npmrc，yarn.lock，yarn.lock会锁定资源地址，yarn.lock的链接还是过期的url。以前yarn的V1版本能读取.npmrc，V2版本不行。
+
+M1：删掉yarn.lock，不用yarn
+
+M2：删掉yarn.lock，添加.yarnrc这个文件，就yarn行了，.npmrc也可以删了
